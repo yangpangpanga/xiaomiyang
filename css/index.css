@@ -1,0 +1,9 @@
+img { vertical-align: middle; border: none; }
+
+html, body { width: 100%; }
+
+.box-top { width: 100%; height: 120px; }
+
+.box-top a { display: block; height: 120px; width: 100%; }
+
+.box-top a img { width: 100%; }
