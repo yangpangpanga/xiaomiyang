@@ -1,20 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../res/bootstrap/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../res/swiper/css/swiper.min.css">
 </head>
+
 <body>
     <!-- 头部区域 -->
 
-    <div class="box-top"> 
+    <div class="box-top">
         <a href="#"><img src="../img/xiaomi7.jpg" alt=""></a>
     </div>
-    <div class="container">
-        
+    <div class="head"></div>
+    <div class="navT">
+        <div class="middle-navT">
+            <p></p>
+            <div class="tabchange">
+                <ul> 
+                    <li> <a href="">小米手机</a> </li>
+                    <li><a href=""> Redmi红米</a> </li>
+                    <li> <a href="">电视</a> </li>
+                    <li> <a href="">笔记本 </a> </li>
+                    <li><a href="">家电</a> </li>
+                    <li> <a href="">路由器</a> </li>
+                    <li><a href="">智能硬件</a>  </li>
+                    <li class="none"><a href="">服务</a>  </li>
+                    <li class="none"><a href="">社区</a> </li>
+                </ul>
+                
+            </div>
+            <div class="last">
+                <input type="text">
+                <span class="glyphicon glyphicon-search"></span>
+            </div>
+        </div>
+        <div class="tabB">
+            
+                <ol class="show">
+                    <li><p><img src="" alt=""></p><p>价格1</p><p>9999</p></li>
+                    <li><p><img src="" alt=""></p><p>价格</p><p>9999</p></li>
+                    <li><p><img src="" alt=""></p><p>价格</p><p>9999</p></li>
+                    <li><p><img src="" alt=""></p><p>价格</p><p>9999</p></li>
+                    <li><p><img src="" alt=""></p><p>价格</p><p>9999</p></li>
+                    <li><p><img src="" alt=""></p><p>价格</p><p>9999</p></li>
+                    
+                </ol>            
+        </div>       
     </div>
+    <div class="navB">
+        <div class="middle-navB">
+            <div class="leftbox">
+                <ul>
+                    <li>手机电话卡<span>></span></li>
+                    <li>电视盒子<span>></span></li>
+                    <li>笔记本显示器平板<span>></span></li>
+                    <li>家电插线板<span>></span></li>
+                    <li>出行穿戴<span>></span></li>
+                    <li>智能路由器<span>></span></li>
+                    <li>电源配件<span>></span></li>
+                    <li>健康儿童<span>></span></li>
+                    <li>耳机音箱<span>></span></li> 
+                    <li>生活箱包<span>></span></li>
+                </ul>
+            </div>
+            <div class="rightbox">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" ><a href=""><img src="../img/xiaomi1.jpg" alt=""></a></div>
+                        <div class="swiper-slide" ><a href=""><img src="../img/xiaomi2.jpg" alt=""></a></div>
+                        <div class="swiper-slide" ><a href=""><img src="../img/xiaomi3.jpg" alt=""></a></div>
+                        <div class="swiper-slide" ><a href=""><img src="../img/xiaomi4.jpg" alt=""></a></div>
+                        <!-- <div class="swiper-slide" style="background-image:url(../img/xiaomi5.jpg)"></div> -->
+                      </div>
+                      <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                      <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+            </div>
+            <div class="bottombox">
+                <div class="left">
+                    <ul>
+                        <li><a href=""><span class="glyphicon glyphicon-time"></span>小米秒杀 </a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-gift"></span>企业团购</a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-barcode"></span>F码通道</a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-hdd"></span>米粉卡</a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-jpy"></span> 以旧换新</a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-phone"></span>话费充值</a></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../res/jquery-1.11.0.min.js"></script>
+    <script src="../res/swiper/js/swiper.min.js"></script>
+    <script src="../js/index.js"></script>
 </body>
+
 </html>
