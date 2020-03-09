@@ -1,12 +1,8 @@
 
 
 $(function(){
-    // //判断设备宽度
-    // if($('body').width() <= 1226){
-    //     console.log('xiao')
-    //     $('.center').width($('.center').parent().width())
-    // }
     $('.head').load('../../html/head.html') //加载头部页面
+    $('.bottombox').load('../../html/bottom.html')//加载尾部页面
     //第一个二级导航的区域
     $('.tabchange ul li').not('.none').hover(function(){
         $('.tabB ol').eq($(this).index()).addClass('show').siblings().removeClass('show')
@@ -16,11 +12,14 @@ $(function(){
         $('.tabB').stop().slideUp()
     })
     //手机区域划过动态效果
-    $('.bottomlist ul li').hover(function(){
+    $('.moves').hover(function(){
       $(this).stop().animate({top:-3},200)
     },function(){
       $(this).stop().animate({top:0},200)
     })
+    //s搜索框
+   
+   
 })
 //倒计时区域
 var now = new Date();
