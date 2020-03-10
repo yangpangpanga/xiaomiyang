@@ -11,6 +11,10 @@ $(function(){
                     $('.login span').html('用户名或密码不正确').css({display:'block'})
                   }
                   if(data.code == 1){
+                      setCookie("username",data.data.username,3);
+                      setCookie("password",data.data.password,3);
+                      setCookie("id",data.data.id,3);
+                      setCookie("token",data.data.token,3) ;                     
                       location.href = 'http://localhost:8080/html/'
                   }
             })
@@ -20,3 +24,9 @@ $(function(){
        
     })
 })
+
+function setCookie (key,val,time){
+    var nowDate = new Date();
+    nowDate.setDate(nowDate.getDate() + time);
+    document.cookie = key + '=' + val +';expires=' + nowDate;
+}
