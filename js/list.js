@@ -33,12 +33,8 @@ $(function(){
             uid:getCookie('id'),
             pid: $(this).attr('data-id'),
             pnum:1 
-        },function(data){console.log(data)})
-        //测试查询购物车商品数量接口
-        // $.get('http://jx.xuzhixiang.top/ap/api/cart-list.php',{
-        //     id:getCookie('id'),
-        // },function(data){console.log(data)})
-    })
+        })
+    })    
 })
 function setCookie (key,val,time){
     var nowDate = new Date();

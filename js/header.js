@@ -1,8 +1,6 @@
 $(function(){
    //判断是否登录，显示详情
     if(getCookie('username')){
-        console.log('登录了')
-        // console.log( $('.middle-top ol'))
       $('.middle-top ol').css({display:'none'}); //原有隐藏
       $('.willlogina .mycon').html(getCookie('username'));
       $('.willlogina').css({display:'block'}).mouseenter(function(){ //用户名显示
@@ -21,7 +19,16 @@ $(function(){
 
 
     $('.tabchange ul li').not('.none').mouseenter(function(){
-        $('.tabB ol').eq($(this).index()).addClass('show').siblings().removeClass('show')
+        $('.tabB ol').eq($(this).index()).addClass('show').siblings().removeClass('show');
+        var which = $(this).index();
+        console.log(which)
+        var id = $(this).attr('data-id');
+        $.get('http://jx.xuzhixiang.top/ap/api/detail.php',{id},function(data){
+            data = data.data;
+            $('.tabB ol').eq(which).children().children().has('img').children().attr('src',data.pimg);
+            console.log($('.tabB ol').eq(which).children().find('.money'))
+            $('.tabB ol').eq(which).children().find('.money').html(data.pprice)
+        })
         $('.tabB').stop().slideDown()
     })
     $('.navT').mouseleave(function(){

@@ -43,14 +43,25 @@ $(function(){
         $('.rightnav').html(str).css({display:'block',width:width * 249});
       }
     })
-    $('.rightnav').mouseleave(function(){
+    $('.middle-navB').mouseleave(function(){
       console.log('yichul ')
-      $(this).css({display:'none'})
+      $('.rightnav').css({display:'none'})
     })  
-    $('.rightbox').mouseleave(function(){
-      $('rightnav').css({display:'none'})
-    })  
+    $('.swiper-slide').map(function(){
+      $(this).css({'border-color':`rgb(${colors()},${colors()},${colors()})`});
+      $.get('http://jx.xuzhixiang.top/ap/api/detail.php',{id:$(this).attr('data-id')})
+      .then((data) => {
+        $(this).children().children().eq(0).children().attr('src',data.data.pimg);
+        $(this).children().children().eq(1).html(data.data.pname);
+        $(this).children().children().eq(2).html(data.data.pdesc)
+        $(this).children().children().eq(3).html(data.data.pprice + '<del>999元</del>')
+      })
+      
+    })
 })
+function colors(){
+   return parseInt(Math.random()*266);
+}
 //倒计时区域
 var timer = setInterval(function(){
       var now = new Date();
