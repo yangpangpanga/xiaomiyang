@@ -6,7 +6,6 @@ $(function(){
  $.get('http://jx.xuzhixiang.top/ap/api/productlist.php',{
         uid:getCookie('id')
     }).then((data) => {//是一个数组
-        console.log(data.data)
         var list = data.data;
         var str = ''
         list.forEach((val,index) => {
@@ -14,16 +13,31 @@ $(function(){
             <span><img src="${val.pimg}" alt=""></span>  
             <p>${val.pname}</p>
             <p>${val.pprice}</p>
-            <input type="button" value="加入购物车" data-id=${val.pid}>
+            <input type="button" value="加入购物车" data-id=${val.pid} class="add">
         </li>`
         });
         $('.list').html(str);
     })
     //点击按钮吧id存在cookie
-    $('.list').on('click','li',function(){
+    $('.list ').on('click','li',function(){
         var val = $(this).find('input').attr('data-id')
         setCookie('pid',val,1);
+        console.log('suss')
         location.href = './detail.html'
+    })
+    //给加入购物车添加点击事件
+    $('.list').on('click','input',function(evt){
+        evt.stopPropagation();
+        // 调用添加购物车接口
+        $.get('http://jx.xuzhixiang.top/ap/api/add-product.php',{
+            uid:getCookie('id'),
+            pid: $(this).attr('data-id'),
+            pnum:1 
+        },function(data){console.log(data)})
+        //测试查询购物车商品数量接口
+        // $.get('http://jx.xuzhixiang.top/ap/api/cart-list.php',{
+        //     id:getCookie('id'),
+        // },function(data){console.log(data)})
     })
 })
 function setCookie (key,val,time){

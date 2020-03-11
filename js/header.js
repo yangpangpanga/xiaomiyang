@@ -1,20 +1,24 @@
 $(function(){
    //判断是否登录，显示详情
     if(getCookie('username')){
-        $('.willlogin a').eq(0).html(getCookie('username'))
-        .click(function(e){
-            e.preventDefault();
-        })
-        .hover(function(){
-            $(this).css({background:'white'});
-            $('.willshow').stop().slideDown();
-        },function(){
-            $(this).css({background:'#333333',width:'120px'})
-        });
-        $('.willlogin a').eq(1).html('消息通知');
-        $('.willlogin a').eq(2).html('我的订单');
-
+        console.log('登录了')
+        // console.log( $('.middle-top ol'))
+      $('.middle-top ol').css({display:'none'}); //原有隐藏
+      $('.willlogina .mycon').html(getCookie('username'));
+      $('.willlogina').css({display:'block'}).mouseenter(function(){ //用户名显示
+        $('.willlogina  .mycon').css({background:'#ffffff'}) ;
+        $('.willshow').css({display:'block'}).mouseleave(function(){
+            $('.willlogina  .mycon').css({background:'#333333'}) ;
+            $('.willshow').css({display:'none'});
+          })
+      });
     }
+    if(!getCookie('username')){
+        $('.middle-top ol').css({display:'block'});
+       $('.willlogina').css({display:'none'});
+    }
+
+
 
     $('.tabchange ul li').not('.none').mouseenter(function(){
         $('.tabB ol').eq($(this).index()).addClass('show').siblings().removeClass('show')

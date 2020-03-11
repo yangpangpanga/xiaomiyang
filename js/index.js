@@ -73,12 +73,7 @@ var timer = setInterval(function(){
       $('.leftsale span').eq(2).html(seconds);
       
 },1000)
-
-
-
-
 //第一个轮播区域
-
 var swiper = new Swiper('#swiper1', {
     speed:1000,
     spaceBetween: 30,
