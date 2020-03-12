@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../res/bootstrap/css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/index.min.css">
     <link rel="stylesheet" href="../res/swiper/css/swiper.min.css">
 </head>
 
@@ -78,6 +78,7 @@
         </div>
     </div>
     <div class="mainbox">
+      <!-- 倒计时区域和第二个轮播图区域 -->
         <div class="middle-sale">
             <h1>小米闪购</h1>
             <div class="leftsale">
@@ -120,7 +121,7 @@
                           <p>一段文字</p>
                           <p>一段文字<del>999元</del></p>
                         </a></div>
-                      <div class="swiper-slide"data-id="197043">
+                      <div class="swiper-slide" data-id="197043">
                             <a href="">
                             <span><img src="" alt=""></span>  
                           <p>一段文字</p>
@@ -383,7 +384,7 @@
         <!-- 第一个广告区域 -->
         <div class="poster1">  
             <a href="">
-                <img src="" alt="">
+                <img src="../img/n5.jpg" alt="">
             </a>
         </div>
         <!-- 手机展示区域 -->
@@ -394,10 +395,10 @@
             </div>
             <div class="bottomlist">
                 <div class="lefta">
-                    <a href=""><img src="" alt=""></a>
+                    <a href=""><img src="../img/n4.jpg" alt=""></a>
                 </div>
                 <!-- 手机列表展示区域 -->
-                <ul>
+                <ul data-id="197047">
                     <li class="moves">
                         <a href="">
                             <span><img src="" alt=""></span>  
@@ -466,7 +467,9 @@
             </div>
         </div>
         <!-- 第二个广告区域 -->
-        <div class="poster2"></div>
+        <div class="poster2">
+          <a href=""><img src="../img/n6.jpg" alt=""></a>
+        </div>
         <!-- 家电广告区域 -->
         <div class="middle-household">
             <div class="tophouse"> 
@@ -478,13 +481,10 @@
             </div>
             <!-- 家电列表展示区域 -->
             <div class="houselist">
-                <ul>
-                    <li  class="moves">
+                <ul data-id="197040">
+                    <li  class="moves nono noimg" >
                         <a href="">
-                            <span><img src="" alt=""></span>  
-                        <p>一段文字</p>
-                        <p>一段文字</p>
-                        <p>一段文字<del>9999</del></p>
+                            <img src="../img/n7.jpg" alt=""> 
                         </a>
                     </li>
                     <li class="moves">
@@ -495,19 +495,86 @@
                         <p>一段文字</p>
                         </a>
                     </li>
-                    <li class="moves"></li>
-                    <li class="moves"></li>
-                    <li class="moves"></li>
-                    <li class="moves"></li>
-                    <li class="moves"></li>
-                    <li class="moves"></li>
-                    <li class="moves"></li>
-                    <li class="moves"></li>
+                    <li class="moves">
+                      <a href="">
+                        <span><img src="" alt=""></span>  
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    <p>一段文字<del>9999</del></p>
+                    </a>
+                    </li>
+                    <li class="moves">
+                      <a href="">
+                        <span><img src="" alt=""></span>  
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    <p>一段文字<del>9999</del></p>
+                    </a>
+                    </li>
+                    <li class="moves">
+                      <a href="">
+                        <span><img src="" alt=""></span>  
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    <p>一段文字<del>9999</del></p>
+                    </a>
+                    </li>
+                    <li class="moves nono noimg">
+                      <a href="">
+                        <img src="../img/n7.jpg" alt="">
+                    </a>
+                    </li>
+                    <li class="moves">
+                      <a href="">
+                        <span><img src="" alt=""></span>  
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    <p>一段文字<del>9999</del></p>
+                    </a>
+                    </li>
+                    <li class="moves">
+                      <a href="">
+                        <span><img src="" alt=""></span>  
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    <p>一段文字<del>9999</del></p>
+                    </a>
+                    </li>
+                    <li class="moves">
+                      <a href="">
+                        <span><img src="" alt=""></span>  
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    <p>一段文字<del>9999</del></p>
+                    </a>
+                    </li>
+                    <li class="moves nono noan">
+                      <div class="topm moves">
+                          <div class="leftm">
+                            <p>一段文字</p>
+                            <p>一段文字</p>
+                          </div>
+                          <div class="rightm">
+                            <img src="" alt="">
+                          </div>
+                      </div>
+                      <div class="botm moves">
+                        <a href="">
+                          <div class="seemore">
+                            <h1>浏览更多</h1>
+                            <em>热门</em>
+                          </div>
+                          <span class="glyphicon glyphicon-arrow-right ar"></span>
+                        </a>
+                      </div>
+                    </li>
                 </ul>
             </div>           
         </div>
          <!-- 第三那个广告区域 -->
-         <div class="poster3"></div>
+         <div class="poster3">
+           <a href=""><img src="../img/n5.jpg" alt=""></a>
+         </div>
          <!-- 智能广告区域 -->
          <div class="middle-mind">
              <div class="topmind">
@@ -518,22 +585,96 @@
              </div>
              <!-- 智能商品展示区域 -->
              <div class="mindlist">
-                 <ul>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
+                 <ul  data-id="197041">
+                     <li class="moves nono noimg" >
+                       <a href=""><img src="../img/n7.jpg" alt=""></a>
+                     </li>
+                     <li class="moves">
+                      <a href="">
+                        <span><img src="" alt=""></span>  
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    </a>
+                     </li>
+                     <li class="moves">
+                      <a href="">
+                        <span><img src="" alt=""></span>  
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    </a>
+                     </li>
+                     <li class="moves">
+                      <a href="">
+                        <span><img src="" alt=""></span>  
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    </a>
+                     </li>
+                     <li class="moves">
+                      <a href="">
+                        <span><img src="" alt=""></span>  
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    </a>
+                     </li>
+                     <li class="moves nono noimg" >
+                       <a href=""><img src="../img/n7.jpg" alt=""></a>
+                     </li>
+                     <li class="moves">
+                      <a href="">
+                        <span><img src="" alt=""></span>  
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    </a>
+                     </li>
+                     <li class="moves">
+                      <a href="">
+                        <span><img src="" alt=""></span>  
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    </a>
+                     </li>
+                     <li class="moves">
+                      <a href="">
+                        <span><img src="" alt=""></span>  
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    <p>一段文字</p>
+                    </a>
+                     </li>
+                     <li class="moves nono  noan" >
+                      <div class="topm moves">
+                        <div class="leftm">
+                          <p>一段文字</p>
+                          <p>一段文字</p>
+                        </div>
+                        <div class="rightm">
+                          <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="botm moves">
+                      <a href="">
+                        <div class="seemore">
+                          <h1>浏览更多</h1>
+                          <em>热门</em>
+                        </div>
+                        <span class="glyphicon glyphicon-arrow-right ar"></span>
+                      </a>
+                    </div>
+                     </li>
                  </ul>
              </div>
          </div>
          <!-- 第四个广告区域 -->
-         <div class="poster4"></div>
+         <div class="poster4">
+           <a href=""><img src="../img/n6.jpg" alt=""></a>
+         </div>
          <!-- 搭配区域 -->
          <div class="middle-match">
             <div class="topmatch">
@@ -544,23 +685,97 @@
              </div>
              <!-- 搭配区域商品列表展示区域 -->
              <div class="matchlist">
-                 <ul>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
+                 <ul  data-id="197046">
+                  <li class="moves nono noimg" >
+                    <a href=""><img src="../img/n7.jpg" alt=""></a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves nono noimg" >
+                    <a href=""><img src="../img/n7.jpg" alt=""></a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves nono  noan" >
+                    <div class="topm moves">
+                      <div class="leftm">
+                        <p>一段文字</p>
+                        <p>一段文字</p>
+                      </div>
+                      <div class="rightm">
+                        <img src="" alt="">
+                      </div>
+                  </div>
+                  <div class="botm moves">
+                    <a href="">
+                      <div class="seemore">
+                        <h1>浏览更多</h1>
+                        <em>热门</em>
+                      </div>
+                      <span class="glyphicon glyphicon-arrow-right ar"></span>
+                    </a>
+                  </div>
+                  </li>
                  </ul>
              </div>
          </div>
 
           <!-- 第五个广告区域 -->
-          <div class="poster4"></div>
+          <div class="poster4">
+            <a href=""><img src="../img/n5.jpg" alt=""></a>
+          </div>
           <!-- 配件区域 -->
           <div class="middle-match">
              <div class="topmatch">
@@ -571,23 +786,99 @@
               </div>
               <!-- 配件区域商品列表展示区域 -->
               <div class="matchlist">
-                  <ul>
-                      <li class="moves"></li>
-                      <li class="moves"></li>
-                      <li class="moves"></li>
-                      <li class="moves"></li>
-                      <li class="moves"></li>
-                      <li class="moves"></li>
-                      <li class="moves"></li>
-                      <li class="moves"></li>
-                      <li class="moves"></li>
-                      <li class="moves"></li>
+                  <ul data-id="197045">
+                    <li class="moves nono noimg" >
+                      <a href=""><img src="../img/n7.jpg" alt=""></a>
+                    </li>
+                    <li class="moves">
+                     <a href="">
+                       <span><img src="" alt=""></span>  
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   </a>
+                    </li>
+                    <li class="moves">
+                     <a href="">
+                       <span><img src="" alt=""></span>  
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   </a>
+                    </li>
+                    <li class="moves">
+                     <a href="">
+                       <span><img src="" alt=""></span>  
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   </a>
+                    </li>
+                    <li class="moves">
+                     <a href="">
+                       <span><img src="" alt=""></span>  
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   </a>
+                    </li>
+                    <li class="moves nono noimg" >
+                      <a href=""><img src="../img/n7.jpg" alt=""></a>
+                    </li>
+                    <li class="moves">
+                     <a href="">
+                       <span><img src="" alt=""></span>  
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   </a>
+                    </li>
+                    <li class="moves">
+                     <a href="">
+                       <span><img src="" alt=""></span>  
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   </a>
+                    </li>
+                    <li class="moves">
+                     <a href="">
+                       <span><img src="" alt=""></span>  
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   <p>一段文字</p>
+                   </a>
+                    </li>
+                    <li class="moves nono noan" >
+                      <div class="topm moves">
+                        <div class="leftm">
+                          <p>一段文字</p>
+                          <p>一段文字</p>
+                        </div>
+                        <div class="rightm">
+                          <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="botm moves">
+                      <a href="">
+                        <div class="seemore">
+                          <h1>浏览更多</h1>
+                          <em>热门</em>
+                        </div>
+                        <span class="glyphicon glyphicon-arrow-right ar"></span>
+                      </a>
+                    </div>
+                    </li>
                   </ul>
               </div>
           </div>
 
            <!-- 第六个广告区域 -->
-         <div class="poster4"></div>
+         <div class="poster4">
+           <a href="">
+             <img src="../img/n6.jpg" alt="">
+           </a>
+         </div>
          <!-- 周边区域 -->
          <div class="middle-match">
             <div class="topmatch">
@@ -598,23 +889,90 @@
              </div>
              <!-- 周边区域商品列表展示区域 -->
              <div class="matchlist">
-                 <ul>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
-                     <li class="moves"></li>
+                 <ul data-id="197043">
+                  <li class="moves nono noimg" >
+                    <a href=""><img src="../img/n7.jpg" alt=""></a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves nono noimg" >
+                    <a href=""><img src="../img/n7.jpg" alt=""></a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves">
+                   <a href="">
+                     <span><img src="" alt=""></span>  
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 <p>一段文字</p>
+                 </a>
+                  </li>
+                  <li class="moves nono noan" >
+                  <div class="botm moves">
+                    <a href="">
+                      <div class="seemore">
+                        <h1>浏览更多</h1>
+                        <em>热门</em>
+                      </div>
+                      <span class="glyphicon glyphicon-arrow-right ar"></span>
+                    </a>
+                  </div>
+                  </li>
                  </ul>
              </div>
          </div>
 
             <!-- 第七个广告区域 -->
-         <div class="poster4"></div>
+         <div class="poster4">
+           <a href="">
+             <img src="../img/n5.jpg" alt="">
+           </a>
+         </div>
 
          <!-- 视频区域 -->
          <div class="middle-movies">
@@ -623,12 +981,46 @@
                     <a href="">查看全部<span class="glyphicon glyphicon-chevron-right"></span></a>                
              </div>
              <ul>
-                 <li><div></div><p>一段文字</p></li>
-                 <li></li>
-                 <li></li>
-                 <li></li>
+                 <li><div>
+                   <img src="../img/n8.jpg" alt="">
+                 </div><p>一段文字</p></li>
+                 <li><div>
+                  <img src="../img/n8.jpg" alt="">
+                </div><p>一段文字</p></li>
+                <li><div>
+                  <img src="../img/n8.jpg" alt="">
+                </div><p>一段文字</p></li>
+                <li><div>
+                  <img src="../img/n8.jpg" alt="">
+                </div><p>一段文字</p></li>
              </ul>
          </div>      
+    </div>
+    <div class="rightfix">
+      <h6>
+        <p class="glyphicon glyphicon-phone"></p>
+       <p class="disnone">手机ap</p>
+      </h6>
+      <h6>
+        <p class="glyphicon glyphicon-user"></p>
+        <p class="disnone">手机ap</p>
+      </h6>
+      <h6>
+        <p class="glyphicon glyphicon-wrench"></p>
+        <p class="disnone">手机ap</p>
+      </h6>
+      <h6>
+        <p class="glyphicon glyphicon-phone-alt"></p>
+        <p class="disnone">手机ap</p>
+      </h6>
+      <h6>
+        <p class="glyphicon glyphicon-shopping-cart"></p>
+        <p class="disnone">手机ap</p>
+      </h6>      
+    </div>
+    <div class="backtop">
+        <p class="glyphicon glyphicon-arrow-up"></p>
+        <p>回顶部</p>
     </div>
       <!-- 尾部区域 -->
       <div class="bottombox"></div>
